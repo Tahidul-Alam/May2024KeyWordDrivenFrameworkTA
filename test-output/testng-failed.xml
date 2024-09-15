@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Functional Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Funtional Test(failed)">
+    <groups>
+      <run>
+        <include name="functional"/>
+      </run>
+    </groups>
+    <classes>
+      <class name="com.facebook_tests.LoginTest">
+        <methods>
+          <include name="openFacebook"/>
+          <include name="invalidUsernameTest"/>
+          <include name="closeFacebook"/>
+          <include name="validLoginTest"/>
+        </methods>
+      </class> <!-- com.facebook_tests.LoginTest -->
+    </classes>
+  </test> <!-- Funtional Test(failed) -->
+</suite> <!-- Failed suite [Functional Suite] -->
